@@ -2,7 +2,7 @@ import { NextPage } from "next";
 
 const Experience : NextPage = () => {
     return (
-        <div>
+        <div className="experience-page">
             Experience page
         </div>
     )
