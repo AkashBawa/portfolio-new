@@ -2,7 +2,7 @@ import { NextPage } from "next";
 
 const About : NextPage = () => {
     return (
-        <div>
+        <div className="about-page">
             About page
         </div>
     )
