@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-import About from "./about";
+import Skills from "./skills";
 import Contact from "./contact";
 import Experience from "./experience";
 import Home from "./home";
@@ -10,11 +10,11 @@ const App : NextPage = () => {
         <div>
             
             <div className="menu-bar">
-                <nav className="nav">
+                <nav className="navbar-custom">
                     <label className="myLogo">AB logo</label>
                     <ul className="ul">
                         <li> <a href="#">Home</a> </li>
-                        <li> <a href="#">About</a> </li>
+                        <li> <a href="#">SKills</a> </li>
                         <li> <a href="#">Experience</a> </li>
                         <li> <a href="#">Projects</a> </li>
                         <li> <a href="#">Contact Me</a> </li>
@@ -23,7 +23,7 @@ const App : NextPage = () => {
             </div>
 
             <Home></Home>
-            <About></About>
+            <Skills></Skills>
             <Experience></Experience>
             <Projects></Projects>
             <Contact></Contact>
