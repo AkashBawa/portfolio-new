@@ -112,3 +112,50 @@ body {
         }
     }
 }
+
+.contact-wrapper {
+    width: 100%;
+    min-height:  calc(100vh - 80px);
+    background-color: #D5D0EF;
+    .main {
+        padding: 75px;
+        .outer-model {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+            display: flex;
+            padding-top: 50px;
+            .left-side {
+                text-align: center;
+                padding: 50px 0;  
+                width: 50%;
+                h2 {
+                    font-weight: bold;
+                    font-size: 61px;
+                }
+            }
+            .right-side{
+                width: 50%;
+                input, textarea {
+                    border: none;
+                    background-color: #e6e3f7;
+                    border-radius: 5px;
+                    padding: 5px;
+                    margin-bottom: 10px;
+                    min-width: 250px;
+                }
+                .send-message {
+                    button {
+                        padding: 8px 25px;
+                        border-radius: 5px;
+                        margin-right: 10px;
+                        background-color: $buttonColor;
+                        color: white;
+                        border: none
+                    }
+                }
+            }
+            
+        }
+    }
+}
