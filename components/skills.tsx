@@ -55,8 +55,8 @@ const Skills : NextPage = () => {
             name: 'Javascript',
             startDate: 'April 2019',
             backgroundColor: {
-                light : '#5FAE45',
-                dark:  '#3E843D'
+                light : '#c6b637',
+                dark:  '#847501'
             },
             textColor: 'white',
             projects : ['Outgrow', 'Healthcrum'],
@@ -83,7 +83,6 @@ const Skills : NextPage = () => {
                             )
                         })
                     }
-                    
                 </div>
             </div>
         </div>
