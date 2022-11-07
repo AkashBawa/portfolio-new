@@ -17,11 +17,9 @@ const Contact : NextPage = () => {
     return (
         <div className="contact-wrapper">
             <div className="main">
-
-                
                     <div className="outer-model">
                             <div className="left-side">
-                                <h2> Let's chat</h2>
+                                <h2> {"Let's chat"}</h2>
                                 <h2> Tell me about your project</h2>
                             </div>
                             <div className="right-side">

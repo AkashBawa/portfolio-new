@@ -16,6 +16,7 @@ body {
     position: sticky;
     top: 0;
     width: 100%;
+    z-index: 2;
     .navbar-custom {
         height: 80px;
         width: 100%;
@@ -110,24 +111,53 @@ body {
         .heading {
             text-align: center;
         }
+        .list-skills{
+            padding: 25px;
+            display: flex;
+        }
+        .skill-card {
+            height: 150px;
+            width: 200px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 25px;
+            .logo{
+                display: flex;
+                justify-content: center;
+            }
+            h4 {
+                text-align: center;
+            }
+        }
+        .logo-div {
+            border-radius: 50%;
+            background: white;
+            padding: 5px;
+            margin-top: 10px;
+        }
     }
 }
 
 .contact-wrapper {
     width: 100%;
-    min-height:  calc(100vh - 80px);
+    // height:  calc(100vh - 80px);
     background-color: #D5D0EF;
     .main {
         padding: 75px;
+        height: 100%;
         .outer-model {
+            height: auto;
             background-color: white;
             border-radius: 10px;
             box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
             display: flex;
-            padding-top: 50px;
+            padding-bottom: 10%;
+            padding-top: 10%;
             .left-side {
                 text-align: center;
-                padding: 50px 0;  
+                padding: 50px 100px;  
                 width: 50%;
                 h2 {
                     font-weight: bold;
@@ -136,6 +166,9 @@ body {
             }
             .right-side{
                 width: 50%;
+                .form {
+                    margin-left: 60px;
+                }
                 input, textarea {
                     border: none;
                     background-color: #e6e3f7;
@@ -143,6 +176,11 @@ body {
                     padding: 5px;
                     margin-bottom: 10px;
                     min-width: 250px;
+                    width: 50%;
+                    height: 50px;
+                }
+                textarea {
+                    min-height: 200px;
                 }
                 .send-message {
                     button {
