@@ -1,11 +1,20 @@
-$buttonColor : #8E44E7;
-
+$buttonColor : #4d3f9b;
+$aboutColor: #4A4561;
+$menuBarBackground : #4d3f9b;
+$contactBackground: #4d3f9b;
+$homeBackground: #F8F7FE;
 * {
     padding: 0 ;
     margin: 0 ;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 body {
@@ -20,7 +29,7 @@ body {
     .navbar-custom {
         height: 80px;
         width: 100%;
-        background-color: #34495e;
+        background-color: $menuBarBackground;
     }
     .myLogo {
         font-size: 35px;
@@ -57,7 +66,7 @@ body {
 .home-page {
     height: calc(100vh - 80px);
     width: 100%;
-    background-color: #F8F7FE;
+    background-color: $homeBackground;
     .data-layer {
         display: flex;
         flex-grow: 1;
@@ -69,7 +78,7 @@ body {
     .description {
         width: 50%;
         margin-left: 100px ;
-        color: #4A4561;
+        color: $aboutColor;
         font-size: larger;
         h6 {
             font-size: larger;
@@ -112,10 +121,13 @@ body {
             text-align: center;
         }
         .list-skills{
-            padding: 25px;
+            padding: 25px 100px;
             display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
         }
         .skill-card {
+            box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
             height: 150px;
             width: 200px;
             border-radius: 10px;
@@ -127,6 +139,9 @@ body {
                 display: flex;
                 justify-content: center;
             }
+            img {
+                border-radius: 20px
+            }
             h4 {
                 text-align: center;
             }
@@ -136,6 +151,9 @@ body {
             background: white;
             padding: 5px;
             margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 }
@@ -143,7 +161,7 @@ body {
 .contact-wrapper {
     width: 100%;
     // height:  calc(100vh - 80px);
-    background-color: #D5D0EF;
+    background-color: $contactBackground;
     .main {
         padding: 75px;
         height: 100%;
@@ -194,6 +212,23 @@ body {
                 }
             }
             
+        }
+    }
+}
+
+.experience-page {
+    background-color: $homeBackground;
+    padding: 25px 100px;
+    text-align: center;
+    .heading h1 {
+        text-align: center;
+    }
+    .experience-div {
+        .experience-list {
+            margin: 25px 0;
+            height: 250px;
+            background-color: white;
+            box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
         }
     }
 }
