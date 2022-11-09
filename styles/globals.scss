@@ -7,7 +7,7 @@ $homeBackground: #F8F7FE;
     padding: 0 ;
     margin: 0 ;
     text-decoration: none;
-    list-style: none;
+    // list-style: none;
     box-sizing: border-box;
 }
 
@@ -219,16 +219,64 @@ body {
 .experience-page {
     background-color: $homeBackground;
     padding: 25px 100px;
-    text-align: center;
-    .heading h1 {
-        text-align: center;
-    }
     .experience-div {
         .experience-list {
             margin: 25px 0;
             height: 250px;
             background-color: white;
             box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+            padding: 15px 0;
+        }
+    }
+}
+.section-heading {
+    text-align: center;
+    h1 {
+        text-align: center;
+    }
+}
+
+.projects-wrapper {
+    padding: 100px;
+    display: flex;
+    .heading {
+        padding: 25px 0px;
+        flex-direction: column;
+        border-radius: 10px 10px 0 0;
+    }
+    .image-div {
+        background: white;
+        border-radius: 50%;
+        padding: 10px;
+    }
+    .project-list {
+        min-height: 450px;
+        min-width: 350px;
+        max-width: 350px;
+        max-height: 500px;
+        background-color: $homeBackground;
+        margin-right: 80px;
+        border-radius: 10px;
+        .project-sections {
+            margin-top: 15px;
+            margin-left: 15px; 
+            .head {
+                font-size: 21px;
+                text-decoration: underline;
+            }
+            .tech-list {
+                display: flex;
+                flex-wrap: wrap;
+                span {
+                    display: block;
+                    margin : 5px 5px 0 0;
+                    padding: 9px;
+                    border-radius: 15px;
+                }
+            }
+        }
+        li {
+            list-style: disc;
         }
     }
 }

@@ -9,7 +9,7 @@ const App : NextPage = () => {
     return (
         <div>
             
-            <div className="menu-bar">
+            {/* <div className="menu-bar">
                 <nav className="navbar-custom">
                     <label className="myLogo">AB logo</label>
                     <ul className="ul">
@@ -20,7 +20,7 @@ const App : NextPage = () => {
                         <li> <a href="#">Contact Me</a> </li>
                     </ul>
                 </nav>
-            </div>
+            </div> */}
 
             <Home></Home>
             <Skills></Skills>

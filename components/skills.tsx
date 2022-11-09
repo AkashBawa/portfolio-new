@@ -130,12 +130,12 @@ const Skills : NextPage = () => {
                 </div>
                 <div className="list-skills">
                     {
-                        skills.map((skill) => {
+                        skills.map((skill, index) => {
                             return (
-                                <div className="skill-card" style={{background:  `linear-gradient(${skill.backgroundColor.light}, ${skill.backgroundColor.dark})`, color: skill.textColor}}>
+                                <div key={`skill-${index}`} className="skill-card" style={{background:  `linear-gradient(${skill.backgroundColor.light}, ${skill.backgroundColor.dark})`, color: skill.textColor}}>
                                     <div className="logo">
                                         <div className="logo-div" style={{backgroundColor: skill.logo.backgroungColor}}>
-                                            <Image src={skill.logo.url} height={'50px'} width={'50px'}/>
+                                            <Image src={skill.logo.url} height={'50px'} width={'50px'} alt={skill.name}/>
                                         </div>
                                     </div>
                                     <h4> {skill.name} </h4>
