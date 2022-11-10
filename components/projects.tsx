@@ -85,6 +85,121 @@ const Projects : NextPage = () => {
                     }
                 },
             ]
+        },
+        {
+            name: 'Healthcrum',
+            about: ['Marketing tool and san dd sdsds dsdsd', 'User can create calculator and generates leads', 'Sync leads with different crms along with webhook and zapier'],
+            logo: {
+                background: 'white',
+                url: '/healthcrum.jpeg'
+            },
+            heading: {
+                background: {
+                    light: '#3CBED5',
+                    dark: '#0a7f93'
+                },
+                color: 'white'
+            },
+            techUsed: [
+                {
+                    name: 'Angular',
+                    color: 'white',
+                    background: {
+                        light : '#C4002B',
+                        dark:  '#8c0215'
+                    }
+                },
+                {
+                    name: 'Socket.io',
+                    color: 'white',
+                    background: {
+                        light : '#f76ac6',
+                        dark: '#8e0475'
+                    }
+                },
+                {
+                    name: 'Node JS',
+                    color: 'white',
+                    background: {
+                        light : '#5FAE45',
+                        dark:  '#1a6803'
+                    }
+                },
+                
+                {
+                    name: 'Express',
+                    color: 'white',
+                    background: {
+                        light : '#4f4848',
+                        dark:  '#0B0B0B'
+                    }
+                },
+                {
+                    name: 'MongoDB',
+                    color: 'white',
+                    background: {
+                        light : '#0E9145',
+                        dark: '#02351E'
+                    }
+                },
+            ]
+        },
+        {
+            name: 'Omniengage',
+            about: ['Marketing tool and san dd sdsds dsdsd', 'User can create calculator and generates leads', 'Sync leads with different crms along with webhook and zapier'],
+            logo: {
+                background: 'white',
+                url: '/omniengage.png'
+            },
+            heading: {
+                background: {
+                    light: '#cc0a0d',
+                    dark: '#6b0507'
+                },
+                color: 'white'
+            },
+            techUsed: [
+                {
+                name: 'React JS',
+                    color: 'white',
+                    background: {
+                        light : '#5ED3F3',
+                        dark:  '#046077'
+                    }
+                },
+                {
+                    name: 'Node JS',
+                    color: 'white',
+                    background: {
+                        light : '#5FAE45',
+                        dark:  '#1a6803'
+                    }
+                },
+                {
+                    name: 'Express',
+                    color: 'white',
+                    background: {
+                        light : '#4f4848',
+                        dark:  '#0B0B0B'
+                    }
+                },
+                {
+                    name: 'MongoDB',
+                    color: 'white',
+                    background: {
+                        light : '#0E9145',
+                        dark: '#02351E'
+                    }
+                },
+                {
+                    name: 'S3 Bucket',
+                    color: 'white',
+                    background: {
+                        light : '#D94F41',
+                        dark: '#7a1b12'
+                    }
+                }
+            ]
         }
     ]
 
@@ -102,7 +217,7 @@ const Projects : NextPage = () => {
                             <div className="project-list" key={`project-${index}`}>
                                 <div className="heading flex-center"  style={{background:  `linear-gradient(${project.heading.background.light}, ${project.heading.background.dark})`, color: project.heading.color}}>
                                     <div className="image-div flex-center" style={{background: project.logo.background}}>
-                                        <Image height={45} width={45} src={"/outgrow.png"} alt="outgrow"/>
+                                        <Image height={45} width={45} src={project.logo.url} alt="outgrow"/>
                                     </div>
                                     <h4> {project.name}  </h4>
                                     
@@ -134,7 +249,6 @@ const Projects : NextPage = () => {
                                                     )
                                                 })
                                             }
-                                            {/* <span>Angular</span> */}
                                         </div>
                                     </div>
                                 </div>
@@ -142,11 +256,6 @@ const Projects : NextPage = () => {
                         )
                     })
                 }
-                
-                {/* <div className="project-list">  
-                </div>
-                <div className="project-list">  
-                </div> */}
             </div>
         </div>
     )
