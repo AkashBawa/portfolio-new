@@ -19,7 +19,7 @@ const Home : NextPage = () => {
                     </div>
                 </div>
                 <div className="image">
-                    <Image src="/portfolio.jpeg" height={'357px'} width={'398px'}  alt="developing"/>
+                    <Image src="/portfolio.jpeg" height={357} width={398}  alt="developing"/>
                 </div>
             </div>
             

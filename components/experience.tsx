@@ -42,7 +42,7 @@ const Experience : NextPage = () => {
                 {
                     experiences.map((experience, index) => {
                         return (
-                            <div className="experience-list">
+                            <div className="experience-list" key={`exp-${index}`}>
                                 <h2>Software developer</h2>
                                 <span className="description"> {`${experience.companyName} | ${experience.compUrl} | ${experience.startDate}-${experience.endDate}`} </span>
                             </div>
