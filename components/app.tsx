@@ -4,11 +4,17 @@ import Contact from "./contact";
 import Experience from "./experience";
 import Home from "./home";
 import Projects from "./projects";
+import { useRef } from "react";
 
 const App : NextPage = () => {
+    let contactRef = useRef<any>();
+
+    const screollToBottom = () => {
+        console.log('move')
+        contactRef.current?.scrollIntoView({ behavior: 'smooth' })
+    }
     return (
         <div>
-            
             {/* <div className="menu-bar">
                 <nav className="navbar-custom">
                     <label className="myLogo">AB logo</label>
@@ -22,11 +28,14 @@ const App : NextPage = () => {
                 </nav>
             </div> */}
 
-            <Home></Home>
+            <Home screollToBottom={screollToBottom}></Home>
             <Skills></Skills>
             <Experience></Experience>
             <Projects></Projects>
-            <Contact></Contact>
+            <div ref={contactRef}>
+                <Contact ></Contact>
+            </div>
+            
         </div>
     )
 }

@@ -1,7 +1,8 @@
 import { NextPage } from "next";
 import  Image  from 'next/image'; 
 
-const Home : NextPage = () => {
+const Home : NextPage = (props: any) => {
+    console.log(props)
     return (
         <div className="home-page">
             <div className="data-layer">
@@ -14,7 +15,7 @@ const Home : NextPage = () => {
                        { " After discovering my passion for web development, I couldn’t get enough. I made websites for friends and family, interned with a local business, and hired myself out as a freelancer on upwork. I’m looking forward to bringing that passion to a full-time role. "}
                     </span>
                     <div className="button-row">
-                        <button className="contact-button">Contact Me</button>
+                        <button className="contact-button" onClick={(e) => {props.screollToBottom()}}>Contact Me</button>
                         <button className="resume">Resume</button>
                     </div>
                 </div>
