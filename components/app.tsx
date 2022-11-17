@@ -9,7 +9,7 @@ import { useRef } from "react";
 const App : NextPage = () => {
     let contactRef = useRef<any>();
 
-    const screollToBottom = () => {
+    const scrollToBottom = () => {
         console.log('move')
         contactRef.current?.scrollIntoView({ behavior: 'smooth' })
     }
@@ -28,7 +28,7 @@ const App : NextPage = () => {
                 </nav>
             </div> */}
 
-            <Home screollToBottom={screollToBottom}></Home>
+            <Home scrollToBottom={scrollToBottom}></Home>
             <Skills></Skills>
             <Experience></Experience>
             <Projects></Projects>

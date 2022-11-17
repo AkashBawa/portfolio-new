@@ -71,7 +71,7 @@ const Experience : NextPage = () => {
                             <div className="experience-list" key={`exp-${index}`}>
                                 <h2> {experience.designation} 
                                     <span>
-                                        <Image src={experience.logo} height={30} width={30}></Image>
+                                        <Image src={experience.logo} height={30} width={30} alt={'Logo'}></Image>
                                     </span>
                                 </h2>
                                 <span className="description"> {`${experience.companyName} | ${experience.compUrl} | ${experience.startDate}-${experience.endDate}`} </span>
