@@ -126,7 +126,7 @@ const Skills : NextPage = () => {
             <div className="section">
                 <div className="heading">
                     <h1> My skills </h1>
-                    <span>Here is list of my hard earned skills. I am always keen to learn new things and  sometime even end up over worked.</span>
+                    <p>Here is list of my hard earned skills. I am always keen to learn new things and  sometime even end up over worked.</p>
                 </div>
                 <div className="list-skills">
                     {

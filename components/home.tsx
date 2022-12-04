@@ -15,7 +15,7 @@ const Home : NextPage<HomePropsI> = (props) => {
                     <span className="name"> {"I'm "}<b>Akash Bawa</b> <br/>
                         <b>a</b> web developer.
                     </span>
-                    <span>
+                    <span className="desc">
                        { " After discovering my passion for web development, I couldn’t get enough. I made websites for friends and family, interned with a local business, and hired myself out as a freelancer on upwork. I’m looking forward to bringing that passion to a full-time role. "}
                     </span>
                     <div className="button-row">
