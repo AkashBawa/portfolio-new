@@ -35,7 +35,7 @@ const Contact : NextPage = () => {
                                         <input placeholder="Subject*" onChange={(event) => setSuject(event.target.value)} required />
                                     </div>
                                     <div className="text-field">
-                                        <h6>Tell us about your project </h6>
+                                        <h5>Tell us about your project </h5>
                                         <textarea onChange={(event) => setText(event.target.value)} required></textarea>
                                     </div>
                                     <div className="send-message">
