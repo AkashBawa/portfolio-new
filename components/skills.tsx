@@ -125,8 +125,8 @@ const Skills : NextPage = () => {
         <div className="skills-wrapper">
             <div className="section">
                 <div className="heading">
-                    <h1> My skills </h1>
-                    <span>Here is list of my hard earned skills. I am always keen to learn new things and  sometime even end up over worked.</span>
+                    <h1> <b style={{color: "#4d3f9b"}}> My skills </b></h1>
+                    <p>Here is list of my hard earned skills. I am always keen to learn new things and  sometime even end up over worked.</p>
                 </div>
                 <div className="list-skills">
                     {

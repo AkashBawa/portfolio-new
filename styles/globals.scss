@@ -293,3 +293,161 @@ body {
         }
     }
 }
+@media (min-width:0px) and (max-width: 768px){
+    .home-page {
+        height: auto;
+        padding: 50px 20px;
+        .data-layer {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .hello{
+            font-size: 30px;
+        }
+        .description {
+            width: 100%;
+            margin-left: 0px ;
+            color: $aboutColor;
+            text-align: center;
+            h6 {
+                font-size: larger;
+            }
+            .name {
+                font-size: 42px;
+                margin: 20px 0px;
+            }
+            .desc{
+                font-size: 18px;
+            }
+        }
+        .image img {
+            height: 100%;
+            width: 100%;
+            border-radius: 20px;
+        }
+        .button-row {
+            margin-top: 35px;
+            margin-bottom: 35px;
+            .contact-button {
+                background-color: $buttonColor;
+                color: white;
+                border-radius: 6px;
+            }
+            .resume {
+                border-radius: 6px;
+            }
+        }
+    }
+    .skills-wrapper {
+        padding: 50px 20px;
+        .section {
+            margin-top: 25px;
+            .heading {
+                font-size: 30px;
+                p{
+                    font-size: 16px;
+                    line-height: 1.5;
+                }
+            }
+            .skill-card{
+                width: 147px;
+                margin: 10px;
+            }
+            .list-skills{
+                padding: 0px;
+            }
+        }
+    }
+    .experience-page {
+        padding: 50px 20px;
+        .experience-div {
+            .experience-list {
+                img {
+                    border-radius: 50%;
+                }
+                padding: 20px 18px;
+                border-radius: 10px;
+                .description {
+                    color: $experienceDesc;
+                }
+                .roles {
+                    padding: 25px 0px 0px;
+                }
+            }
+            .experience-list:last-child{
+                margin-bottom: 0px;
+            }
+        }
+    }
+    .wrapper{
+        padding: 50px 20px;
+    }
+    .projects-wrapper {
+        padding: 50px 0px 0px;
+        flex-wrap: wrap;
+        justify-content: center;
+        .image-div {
+            background: white;
+            border-radius: 50%;
+            padding: 10px;
+        }
+        
+        .project-list {
+            max-width: 100%;
+            min-width: 100%;
+            margin-right: 0px;
+            margin-bottom: 40px;
+            .project-outer{           
+                background: #F8F7FE;
+                padding: 20px 20px 30px;
+            }
+            .project-sections {
+                margin: 0px; 
+                .tech-list {
+                    margin-top: 16px;
+                    gap: 10px;
+                    span {
+                        padding: 9px 18px;
+                        border-radius: 8px;
+                        margin: 0px;
+                    }
+                }
+            }
+            li {
+                list-style: disc;
+            }
+        }
+        .project-list:last-child{
+            margin-bottom: 0px;
+        }
+    }
+    .contact-wrapper {
+        .main {
+            padding: 50px 20px;
+            .outer-model {
+                display: flex;
+                flex-wrap: wrap;
+                padding: 30px 20px;
+                .left-side {
+                    padding: 0px; 
+                    width: 100%;
+                    h2 {
+                        font-weight: bold;
+                        font-size: 32px;
+                    }
+                }
+                .right-side{
+                    width: 100%;
+                    .form {
+                        margin-left: 0px;
+                    }
+                    input, textarea {
+                        width: 100%;
+                        padding: 5px 14px;
+                    }
+                }
+                
+            }
+        }
+    }
+}

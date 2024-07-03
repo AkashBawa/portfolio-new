@@ -12,10 +12,10 @@ const Home : NextPage<HomePropsI> = (props) => {
             <div className="data-layer">
                 <div className="description">
                     <label style={{display: "block", color: "#8F8D9A"}} className="hello">HELLO</label>
-                    <span className="name"> {"I'm "}<b>Akash Bawa</b> <br/>
+                    <span className="name"> {"I'm "}<b style={{color: "#4d3f9b"}}>Akash Bawa</b> <br/>
                         <b>a</b> web developer.
                     </span>
-                    <span>
+                    <span className="desc">
                        { " After discovering my passion for web development, I couldn’t get enough. I made websites for friends and family, interned with a local business, and hired myself out as a freelancer on upwork. I’m looking forward to bringing that passion to a full-time role. "}
                     </span>
                     <div className="button-row">
