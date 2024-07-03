@@ -349,7 +349,10 @@ body {
                     line-height: 1.5;
                 }
             }
-            
+            .skill-card{
+                width: 147px;
+                margin: 10px;
+            }
             .list-skills{
                 padding: 0px;
             }
@@ -376,11 +379,75 @@ body {
             }
         }
     }
-    
     .wrapper{
-        display: none;
+        padding: 50px 20px;
     }
-    .contact-wrapper{
-        display: none;
+    .projects-wrapper {
+        padding: 50px 0px 0px;
+        flex-wrap: wrap;
+        justify-content: center;
+        .image-div {
+            background: white;
+            border-radius: 50%;
+            padding: 10px;
+        }
+        
+        .project-list {
+            max-width: 100%;
+            min-width: 100%;
+            margin-right: 0px;
+            margin-bottom: 40px;
+            .project-outer{           
+                background: #F8F7FE;
+                padding: 20px 20px 30px;
+            }
+            .project-sections {
+                margin: 0px; 
+                .tech-list {
+                    margin-top: 16px;
+                    gap: 10px;
+                    span {
+                        padding: 9px 18px;
+                        border-radius: 8px;
+                        margin: 0px;
+                    }
+                }
+            }
+            li {
+                list-style: disc;
+            }
+        }
+        .project-list:last-child{
+            margin-bottom: 0px;
+        }
+    }
+    .contact-wrapper {
+        .main {
+            padding: 50px 20px;
+            .outer-model {
+                display: flex;
+                flex-wrap: wrap;
+                padding: 30px 20px;
+                .left-side {
+                    padding: 0px; 
+                    width: 100%;
+                    h2 {
+                        font-weight: bold;
+                        font-size: 32px;
+                    }
+                }
+                .right-side{
+                    width: 100%;
+                    .form {
+                        margin-left: 0px;
+                    }
+                    input, textarea {
+                        width: 100%;
+                        padding: 5px 14px;
+                    }
+                }
+                
+            }
+        }
     }
 }

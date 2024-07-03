@@ -222,7 +222,7 @@ const Projects : NextPage = () => {
                                     <h4> {project.name}  </h4>
                                     
                                 </div>
-                                <div>
+                                <div className="project-outer">
                                     <div className="project-sections">
                                         <span className="head">About</span>
                                         <div>
